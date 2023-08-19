@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/cda4e3eb33.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+</head>
+<style>
+  body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Space Grotesk, sans-serif;
+    
+  }
+  a {
+    text-decoration: none;
+  }
+
+  html:focus-within {
+  scroll-behavior: smooth;
+  }
+
+</style>
+<body>
+<header class="hero-section text-center bg-black py-5 px-4 relative lg:px-20 2xl:px-96">
+   <nav class="navbar md:flex md:justify-between md:items-center">
+     <a href="#" class="font-black text-white">pavelbogdan</a>
+     <div class="social-icons flex gap-4 justify-center text-white py-4">
+      <a href="https://github.com/codeguy9"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.frontendmentor.io/profile/codeguy9"><img src="assets/images/icon-frontend-mentor.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/bogdan-pavel-0a469a213/"><i class="fa-brands fa-linkedin"></i></a>
+      
+     </div>
+   </nav>
+   <div class="hero-image-and-titles md:flex md:justify-between">
+    <div class="hero-image relative overflow-hidden md:order-2">
+      <img src="assets/images/bogdan.jpg" alt="" class="w-40 mx-auto md:w-80">
+    </div>
+
+    
+    
+    <div class="titles-section text-white md:text-left md:w-1/2">
+     <h1 class="text-4xl py-4">Nice to meet you! I'm <span class="border-b-4 border-b-emerald-600">Pavel Bogdan.</span></h1>
+     <p class="font-medium py-7 text-gray-300">Based in Romania, I'm a front-end developer passionate about 
+       web technologies and building projects that users love.</p>
+     <a href="#contact" class="font-black uppercase tracking-widest border-b-4 border-b-emerald-600 py-2 active:text-emerald-600">Contact me</a>
+    </div>
+   </div>
+   <img src="assets/images/pattern-rings.svg" alt="" class="circles absolute top-0 right-56 md:right-96 md:top-20 md:opacity-70 sm:top-40 sm:-left-80">
+    <img src="assets/images/pattern-circle.svg" alt="" class="absolute bottom-0 left-80 md:left-0 md:left-[730px] sm:left-[630px]">
+</header>
+
+<section class="knowledge bg-black text-center text-white py-7 px-4 lg:px-20 2xl:px-96">
+  <div class="line h-0.5 w-6/6 bg-gray-400 my-7"></div>
+    <div class="techs grid md:grid-cols-2 md:text-left lg:grid-cols-3 max-2xl:place-items-center gap-7 ">
+      <div class="html py-3">
+        <h2 class="text-3xl uppercase">html</h2>
+        <span class="text-md text-gray-300">2 Years Experience</span>
+      </div>
+      <div class="css py-3">
+        <h2 class="text-3xl uppercase">css</h2>
+        <span class="text-md text-gray-300">2 Years Experience</span>
+      </div>
+      <div class="javascript py-3">
+        <h2 class="text-3xl uppercase">javascript</h2>
+        <span class="text-md text-gray-300">3 Months Experience</span>
+      </div>
+      <div class="sass py-3">
+        <h2 class="text-3xl uppercase">sass/scss</h2>
+        <span class="text-md text-gray-300">1 Year Experience</span>
+      </div>
+      <div class="tailwindcss py-3">
+        <h2 class="text-3xl uppercase">tailwind-css</h2>
+        <span class="text-md text-gray-300">6 Months Experience</span>
+      </div>
+    </div>
+      
+      <img src="assets/images/pattern-rings.svg" alt="" class="absolute bottom-4 left-60 md:bottom-56 md:left-[400px] lg:left-[800px]">
+    <div class="line h-0.5 w-6/6 bg-gray-400 my-7 relative overflow-hidden"></div>
+</section>
+  
+<section class="projects bg-black px-4 lg:px-20 2xl:px-96">
+  <div class="project-section-titles flex justify-between text-white py-5">
+    <h3 class="text-3xl">Projects</h3>
+    <a href="#contact" class="border-b-2 border-b-emerald-600 active:text-emerald-600">contact me</a>
+  </div>
+  <div class="project-items flex flex-wrap">
+
+    <div class="project-item w-80 mx-auto py-8 relative">
+      <img src="assets/images/workit landing page.png" alt="">
+      <div class="overlay absolute bg-zinc-800 top-7 right-0 left-0 h-60 transition-all flex flex-col gap-4 justify-center items-center opacity-0 hover:opacity-70">
+        <h6 class=""><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://codeguy9.github.io/workit-landing-page-responsive/">view project</a></h6>
+        <h6 class=""><a href="https://github.com/codeguy9/workit-landing-page-responsive" class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2">view code</a></h6>
+      </div>
+      <h5 class="text-white py-2 uppercase">Workit App Landing Page</h5>
+      <span class="uppercase text-gray-300 pr-4 text-xs">html</span><span class="uppercase text-gray-300 text-xs">tailwind-css</span>
+      <div class="views flex gap-4">
+        <h6 class="pt-3"><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://codeguy9.github.io/workit-landing-page-responsive/">view project</a></h6>
+        <h6 class="pt-3"><a href="https://github.com/codeguy9/workit-landing-page-responsive" class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2">view code</a></h6>
+      </div>
+    </div>
+
+    <div class="project-item w-80 mx-auto py-8 relative">
+      <img src="assets/images/easybank landing page.png" alt="">
+      <div class="overlay absolute bg-zinc-800 top-7 right-0 left-0 h-60 transition-all flex flex-col gap-4 justify-center items-center opacity-0 hover:opacity-70">
+        <h6 class=""><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://codeguy9.github.io/workit-landing-page-responsive/">view project</a></h6>
+        <h6 class=""><a href="https://github.com/codeguy9/workit-landing-page-responsive" class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2">view code</a></h6>
+      </div>
+      <h5 class="text-white py-2 uppercase">Easybank App Landing Page</h5>
+      <span class="uppercase text-gray-300 pr-4 text-xs">html</span><span class="uppercase text-gray-300 pr-4 text-xs">css</span>
+      <div class="views flex gap-4">
+        <h6 class="pt-3"><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://codeguy9.github.io/easybank-landing-page/">view project</a></h6>
+        <h6 class="pt-3"><a href="https://github.com/codeguy9/easybank-landing-page" class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2">view code</a></h6>
+      </div>
+      
+    </div>
+    <div class="project-item w-80 mx-auto py-8 relative">
+      <img src="assets/images/meet landing page.png" alt="">
+      <div class="overlay absolute bg-zinc-800 top-7 right-0 left-0 h-60 transition-all flex flex-col gap-4 justify-center items-center opacity-0 hover:opacity-70">
+        <h6 class=""><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://codeguy9.github.io/workit-landing-page-responsive/">view project</a></h6>
+        <h6 class=""><a href="https://github.com/codeguy9/workit-landing-page-responsive" class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2">view code</a></h6>
+      </div>
+      <h5 class="text-white py-2 uppercase">Meet App Landing Page</h5>
+      <span class="uppercase text-gray-300 pr-4 text-xs">html</span><span class="uppercase text-gray-300 pr-4 text-xs">tailwind-css</span>
+      <div class="views flex gap-4">
+        <h6 class="pt-3"><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://codeguy9.github.io/meet-landing-page/">view project</a></h6>
+        <h6 class="pt-3"><a class="border-b-2 border-b-emerald-600 text-white uppercase text-xs tracking-widest py-2" href="https://github.com/codeguy9/meet-landing-page">view code</a></h6>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="contact-section text-center bg-zinc-800 text-white px-4 lg:px-20 lg:relative 2xl:px-96">
+  <div class="form-and-titles lg:flex lg:justify-between lg:flex-start">
+    <div class="titles py-12 lg:text-left lg:w-64 2xl:w-96">
+      <h6 class="text-3xl font-black py-4">Contact</h6>
+      <p class="font-medium text-gray-300">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+    </div>
+    <form action="" class="text-left flex flex-col pb-12 relative lg:pt-16">
+      <label class="uppercase text-gray-300" for="name" style="padding-left: 30px;">Name</label>
+      <input type="text" id="name" name="username" class="bg-zinc-800 border-b-2 border-b-grey-300 mb-6 focus:outline-none pl-3">
+      <label for="email" class="uppercase text-gray-300" style="padding-left: 30px;">Email</label>
+      <input type="email" name="email" id="email" class="bg-zinc-800 border-b-2 border-b-grey-300 mb-6 focus:outline-none pl-3">
+      <label for="message" class="text-gray-300 uppercase" style="padding-left: 30px;">Message</label>
+      <textarea name="message" id="message" cols="30" rows="4" class="bg-zinc-800 border-b-2 border-b-grey-300 mb-6 focus:outline-none pl-3"></textarea>
+      <img src="assets/images/pattern-rings.svg" alt="" class="absolute top-32 -left-28 lg:hidden">
+      <a href="#" class="text-right tracking-widest py-2 active:text-emerald-600">SEND MESSAGE</a>
+      <div class="line h-0.5 w-6/6 bg-gray-400 mt-20 lg:hidden"></div>
+      
+    </form>
+    
+  </div>
+  <div class="line h-0.5 w-6/6 bg-gray-400 mt-20 sm:hidden md:hidden lg:block lg:mb-12 max-sm:hidden"></div>
+  <img src="assets/images/pattern-rings.svg" alt="" class="sm:hidden md:hidden lg:block lg:absolute lg:bottom-32 lg:-left-32 max-sm:hidden">
+
+  <footer id="contact" class="footer-section sm:flex sm:justify-between md:flex md:justify-between">
+    <a href="#" class="font-black text-white">pavelbogdan</a>
+    <div class="social-icons flex gap-4 justify-center text-white py-4">
+      <a href="https://github.com/codeguy9"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.frontendmentor.io/profile/codeguy9"><img src="assets/images/icon-frontend-mentor.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/bogdan-pavel-0a469a213/"><i class="fa-brands fa-linkedin"></i></a>
+      
+     </div>
+  </footer>
+</section>
+
+
+
+</body>
+</html>
